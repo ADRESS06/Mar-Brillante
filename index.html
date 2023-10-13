@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar Brillante</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/resources/logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/resources/logo.png" alt="Logo">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><button id="btn-ofertas">Ofertas</button></li>
+                    <li><button id="btn-inicio">Inicio</button></li>
+                    <li><button id="btn-tienda">Tienda</button></li>
+                </ul>
+            </div>
+            <div class="nav-vacio"></div>
+        </nav>
+    </header>
+    <!-- Secciones -->
+    <main>
+        <!-- Inicio -->
+        <section class="inicio" id="inicio">
+            <div>
+                <h1>Bienvenido a Mar Brillante</h1>
+                <p>Artesanias para su hogar y para usted.</p>
+            </div>
+        </section>
+        <!--ofertas -->
+        <section class="ofertas" id="ofertas">
+            <h2ofertas extra</h2>
+            <div class="container-items">
+                <div class="item">
+                    <figure>
+                        <img src="./assets/resources/logo.png" alt="Producto">
+                    </figure>
+                    <div class="info-item">
+                        <h3>Pronto habra masofertas</h3>
+                        <p>???</p>
+                        <button onclick="agregarAlCarrito(this)" disabled>Negociar</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Tienda -->
+        <section class="tienda" id="tienda">
+                <h2>Tienda</h2>
+                <p>LLeve los articulos que sean de su preferencia.</p>
+                <!-- Lista de productos -->
+                <div class="container-items">
+                    <div class="item">
+                        <figure>
+                            <img src="./assets/resources/TortugaEscritorio.jpg" alt="Producto">
+                        </figure>
+                        <div class="info-item">
+                            <h3>Tortuga de escritorio</h3>
+                            <p>28.000</p>
+                            <button onclick="Comprar(this)">Encargar</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="./assets/resources/ManillaMarcada.jpg" alt="Producto">
+                        </figure>
+                        <div class="info-item">
+                            <h3>Manilla maracada en madera</h3>
+                            <p>7.000</p>
+                            <button onclick="Comprar(this)">Encargar</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="./assets/resources/ManillaCorazonTrenzada.jpg" alt="Producto">
+                        </figure>
+                        <div class="info-item">
+                            <h3>Manilla de corazon trenzada</h3>
+                            <p>7.000</p>
+                            <button onclick="Comprar(this)">Encargar</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="./assets/resources/CollarOjoGato.jpg" alt="Producto">
+                        </figure>
+                        <div class="info-item">
+                            <h3>Collar ojo de gato</h3>
+                            <p>13.000</p>
+                            <button onclick="Comprar(this)">Encargar</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <figure>
+                            <img src="./assets/resources/BarcoDecorativo.jpg" alt="Producto">
+                        </figure>
+                        <div class="info-item">
+                            <h3>Barco decorativo</h3>
+                            <p>26.000</p>
+                            <button onclick="Comprar(this)">Encargar</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+        </section>
+        <!-- Ventana modal oculta -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <p>Generando su pedido...</p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2023 Mar Brillante. Todos los derechos reservados.</p>
+    </footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
